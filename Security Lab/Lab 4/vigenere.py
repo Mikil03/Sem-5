@@ -18,6 +18,14 @@ def encrypt(plaintext,newkey):
         ciphertext = ciphertext + letters[cipher]
     return ciphertext
 
+def decrypt(ciphertext,newkey):
+    deciphertext = ""
+    for i in range(len(ciphertext)):
+        decipher = ""
+        decipher = (letters.index(ciphertext[i]) - letters.index(newkey[i]) + 26)%26
+        deciphertext = deciphertext + letters[decipher]
+    return deciphertext
+
 letters = list(string.ascii_lowercase)
 
 # Taking plain text from user and converting to lowercase.
@@ -48,4 +56,7 @@ key = ktext
 del(ktext)
 newkey = keygenerator(key,plaintext)
 ciphertext = encrypt(plaintext,newkey)
-print(ciphertext)
+print("The ciphered text is "+ciphertext)
+
+decipher = decrypt(ciphertext,newkey)
+print("The deciphered text is "+decipher)
