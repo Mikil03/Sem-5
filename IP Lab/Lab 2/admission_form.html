@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FE Admission Form</title>
+</head>
+
+<body style="background-color: beige;">
+  <h1 style="text-align: center;">Addmission Form</h1>
+  <div style="margin-left: 14%; margin-right: 14%;border: 5px solid black; box-shadow: 5px 5px lightgray; background-color: rgba(50, 49, 49, 0.472); color: beige">
+    <form style="font-size: 20px; font-family: 'Times New Roman', Times, serif;" action="mailto:admissionComitte@gmail.com" method="post">
+      <table style="padding: 25px;">
+
+        <tr>
+          <td><label>Name:</label></td>
+          <td><input required type="text" name="Fname" value="" placeholder="First name">
+            <input required type="text" name="Mname" value="" placeholder="Middle name">
+            <input required type="text" name="Lname" value="" placeholder="Last name">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Date of Birth:</label></td>
+          <td><input required type="date" name="dob" value=""></td>
+        </tr>
+
+        <tr>
+          <td rowspan="2"><label>Gender:</label></td>
+          <td><input required type="radio" name="gender" value="Male">
+            <label>Male</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input required type="radio" name="gender" value="Female"><label>Female</label></td>
+        </tr>
+
+        <tr>
+          <td><label>Phone Number:</label></td>
+          <td><input required type="number" name="pnumber" value="" min="1000000000" max="9999999999"></td>
+        </tr>
+
+        <tr>
+          <td><label>Email:</label></td>
+          <td><input required type="email" name="emailid" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>Caste:</label></td>
+          <td><input required type="text" name="Caste" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>Religion</label></td>
+          <td><input required type="text" name="religion" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>Mother Tongue:</label></td>
+          <td><input required type="text" name="mother_tongue" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>Father's Name:</label></td>
+          <td><input required type="text" name="Ffname" value="" placeholder="First name">
+            <input required type="text" name="fMname" value="" placeholder="Middle name">
+            <input required type="text" name="fLname" value="" placeholder="Last name">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Father's Occupation:</label></td>
+          <td><input required type="text" name="fOccupation" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>Mother's Name:</label></td>
+          <td><input required type="text" name="mFname" value="" placeholder="First name">
+            <input required type="text" name="mMname" value="" placeholder="Middle name">
+            <input required type="text" name="mLname" value="" placeholder="Last name">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Mother's Occupation:</label></td>
+          <td><input required type="text" name="mOccupation" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>Total Family Income(per annum):</label></td>
+          <td><input required type="number" name="income" value="" min="0"></td>
+        </tr>
+
+        <tr>
+          <td><label>12th Percentage:</label></td>
+          <td><input required type="number" name="12per" value="" min="35" max="100"></td>
+          <td><label>12th Marksheet:</label></td>
+          <td><input required type="file" name="12marksheet" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>12th Passing Year:</label></td>
+          <td><input required type="month" name="12thpassing" value=""></td>
+          <td><label>12th Leaving Certificate:</label></td>
+          <td><input required type="file" name="12lc" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>10th Percentage:</label></td>
+          <td><input required type="number" name="10per" value="" min="35" max="100"></td>
+          <td><label>10th Marksheet:</label></td>
+          <td><input required type="file" name="10marksheet" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>10th Passing Year:</label></td>
+          <td><input required type="month" name="10thpassing" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>CET Percentile:</label></td>
+          <td><input required type="number" name="cetper" value="" min="35" max="100"></td>
+          <td><label>CET Scorecard:</label></td>
+          <td><input required type="file" name="cetScore" value=""></td>
+        </tr>
+
+        <tr>
+          <td><label>JEE Percentile:</label></td>
+          <td><input required type="number" name="jeeper" value="" min="35" max="100"></td>
+          <td><label>JEE Scorecard:</label></td>
+          <td><input required type="file" name="jeeScore" value=""></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><input style="width: 100px; height: 50px; border-radius: 10px; font-size: 15px; box-shadow: 3px 3px gray; margin-top: 15px;" required type="submit" name=""></td>
+          <td></td>
+          <td><input style="width: 100px; height: 50px; border-radius: 10px; font-size: 15px; box-shadow: 3px 3px gray; margin-top: 15px;" required type="reset" name=""></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+
+</html>
