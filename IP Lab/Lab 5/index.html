@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <script src="switch.js"></script>
+</head>
+
+<body>
+    <label id="no">Number</label>
+    <input type="number" id="num">
+    <br>
+    <input type="button" value="Factorial" onclick="fact(document.getElementById('num').value)">
+    <input type="text" id="ans_fact">
+    <input type="button" value="Fibonacci" onclick="fibo(document.getElementById('num').value)">
+    <input type="text" id="ans_fibo">
+
+    <br>
+    <label id="no">Number</label>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <br>
+    <input type="button" value="add" onclick="add(document.getElementById('num1').value,document.getElementById('num2').value)">
+    <input type="number" id="ans_add">
+    <input type="button" value="sub" onclick="sub(document.getElementById('num1').value,document.getElementById('num2').value)">
+    <input type="number" id="ans_sub">
+    <input type="button" value="div" onclick="div(document.getElementById('num1').value,document.getElementById('num2').value)">
+    <input type="number" id="ans_div">
+    <input type="button" value="mul" onclick="mul(document.getElementById('num1').value,document.getElementById('num2').value)">
+    <input type="number" id="ans_mul">
+
+</body>
+
+</html>
