@@ -1,47 +1,25 @@
-let num1 = 0;
-let opt = 0;
+while(true){
+    let num1 = parseInt(prompt("Enter 1st number:"));
+    let num2 =  parseInt(prompt("Enter 2nd number:"));
+    let choice = parseInt(prompt("Select operation:\n 1)Addition\n 2)Subtraction\n 3)Multiplication\n 4)Division"));
+    switch(choice){
+        case 1:
+            alert(num1+num2);
+            break;
 
-function solve(i) {
-    let a = parseFloat(document.getElementById('mdisp').innerHTML.slice(opt + 1, document.getElementById('mdisp').innerHTML.length - 1));
-    let c = opt;
-    let eqn = document.getElementById("mdisp").innerHTML;
-    if (eqn[c] == "+") num1 += a;
-    else if (eqn[c] == "-") num1 -= a;
-    else if (eqn[c] == "/") num1 /= a;
-    else if (eqn[c] == "*") num1 *= a;
-    opt=i;
-    console.log(num1);
-    document.getElementById("mdisp").innerHTML = num1;
-}
+        case 2:
+            alert(num1-num2);
+            break;
 
-function disp(i) {
-    if (!Number.isInteger(i) && opt == 0) {
-        num1 = parseFloat(document.getElementById("mdisp"));
-        opt = i;
-    } else if (opt != 0) {
-        solve(i);
-    } else {
-        if (document.getElementById("mdisp").innerHTML.length < 17) {
-            document.getElementById("mdisp").innerHTML += i;
-        } else if (document.getElementById("mdisp").innerHTML.length < 25) {
-            let j = document.getElementById("mdisp").innerHTML.length - 16;
-            document.getElementById("mdisp").innerHTML += i;
-            document.getElementById("display").style.fontSize = 35 - 1.7 * j + "px";
-        }
+        case 3:
+            alert(num1*num2);
+            break;
+
+        case 4:
+            alert(num1/num2);
+            break;
+        
+        default:
+            alert("Select valid operation!");
     }
 }
-
-function del() {
-    let content = document.getElementById("mdisp").innerHTML;
-    let len = content.length;
-    if (len < 17) {
-        document.getElementById("display").style.fontSize = "35px";
-        document.getElementById("mdisp").innerHTML = content.slice(0, len - 1);
-    } else {
-        let j = 25 - document.getElementById("mdisp").innerHTML.length;
-        document.getElementById("display").style.fontSize = 23.8 + 1.5 * j + "px";
-        document.getElementById("mdisp").innerHTML = content.slice(0, len - 1);
-    }
-}
-
-
