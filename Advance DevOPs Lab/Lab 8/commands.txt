@@ -1,1 +1,18 @@
 docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+
+
+node {
+  stage('Cloning the GitHub Repo') {
+    git 'https://github.com/shazforiot/GOL.git'
+  }
+  stage('SonarQube analysis') {
+    withSonarQubeEnv('sonarqube') {
+      sh "/c/ProgramData//Jenkins/.jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonarqube/bin//sonar-scanner \
+      -D sonar.login=admin \
+      -D sonar.password=mikami \
+      -D sonar.projectKey=demoapp-project \
+      -D sonar.exclusions=vendor/**,resources/**,**/*.java \
+      -D sonar.host.url=http://127.0.0.1:9000/"
+    }
+  }
+}
