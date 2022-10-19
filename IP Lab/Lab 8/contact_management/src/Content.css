@@ -1,0 +1,49 @@
+body{
+    padding: 10px 15px 10px 15px;
+}
+
+.navi{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav1{
+    display: flex;
+}
+
+.nav2{
+    display: flex;
+}
+
+.navelem1{
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.table1{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.header{
+    padding: 10px;
+    font-size: 25px;
+}
+
+td{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
