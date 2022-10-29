@@ -1,0 +1,71 @@
+.mainbody{
+    background-color: white;
+    margin: 0% 10%;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.product1{
+    display: flex;
+}
+
+.prodimg1{
+    padding: 15px;
+}
+
+.prodtxt1{
+    padding: 15px;
+    font-size: 16px;
+}
+
+.mainname{
+    font-size: 20px;
+}
+
+.rating{
+    padding: 5px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+}
+
+.ratingcount{
+    color: rgb(87,87,87);
+    font-weight: 600;
+}
+
+.xtradiscount{
+    color: green;
+}
+
+.newprice{
+    font-size: 25px;
+}
+
+.oldprice{
+    color: gray;
+    text-decoration: line-through;    
+}
+
+.discount{
+    color: green;
+    font-size: 18px;
+}
+
+.purchase{
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+}
+
+#addto{
+    background-color: #FF9F00;
+    border-color: #FF9F00;
+}
+
+#now{
+    background-color: #FB641B;
+    border-color: #FB641B;
+}
